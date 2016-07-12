@@ -5,6 +5,7 @@ Repository for a restful web service exercise
 
 - Apache Maven
 - Spring MVC
+- Spring Boot: http://projects.spring.io/spring-boot/
 - Basic example: https://spring.io/guides/gs/rest-service/
 - How to enable Cross-origin resource sharing (CORS): https://spring.io/guides/gs/rest-service-cors/
 
