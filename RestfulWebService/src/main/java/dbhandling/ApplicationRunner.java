@@ -9,6 +9,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @SpringBootApplication
 public class ApplicationRunner {
+	private final String corsURL = "http://localhost:63342";
 	
 	//CORS configuration to avoid the Access-Control-Allow-Origin errors in certain browsers
 	@Bean
@@ -16,10 +17,10 @@ public class ApplicationRunner {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/user").allowedOrigins("http://localhost:63342");
-                registry.addMapping("/delete_user").allowedOrigins("http://localhost:63342");
-                registry.addMapping("/add_user").allowedOrigins("http://localhost:63342");
-                registry.addMapping("/update_user").allowedOrigins("http://localhost:63342");
+                registry.addMapping("/user").allowedOrigins(corsURL);
+                registry.addMapping("/delete_user").allowedOrigins(corsURL);
+                registry.addMapping("/add_user").allowedOrigins(corsURL);
+                registry.addMapping("/update_user").allowedOrigins(corsURL);
             }
         };
     }

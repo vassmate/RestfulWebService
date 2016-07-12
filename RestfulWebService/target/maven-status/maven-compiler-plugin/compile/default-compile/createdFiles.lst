@@ -1,5 +1,5 @@
 dbhandling\DatabaseController.class
 dbhandling\ApplicationRunner.class
 dbhandling\DatabaseContent.class
-users\User.class
+employees\Employee.class
 dbhandling\ApplicationRunner$1.class
