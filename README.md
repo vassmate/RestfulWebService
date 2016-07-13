@@ -1,7 +1,7 @@
 # RestfulWebService
-Repository for a restful web service exercise
+Repository for a restful web service exercise.
 
-# Used resources:
+# Used resources
 
 - Apache Maven
 - Spring MVC
